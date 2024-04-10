@@ -1,5 +1,5 @@
 package routes
 
-func Init() {
+func InitializeRoutes() {
 	// Add your routes here
 }
