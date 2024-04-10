@@ -1,18 +1,20 @@
 ![banner-symfony](https://user-images.githubusercontent.com/19610753/47301207-4af51380-d616-11e8-866f-c510f0d6ddf7.jpeg)
 
-## Gin Golang Hackathon Starter
+## Golang Gin Hackathon Starter
 
-**Live Demo**: [https://symfony-hackathon-starter.herokuapp.com/](https://symfony-hackathon-starter.herokuapp.com/)
+<!-- **Live Demo**: [https://symfony-hackathon-starter.herokuapp.com/](https://symfony-hackathon-starter.herokuapp.com/) -->
 
-A boilerplate for **Gin Golang** web applications.
+A boilerplate for **Golang Gin** web applications.
 
 If you have attended any hackathons in the past, then you know how much time it takes to get a project started: decide on what to build, pick a programming language, pick a web framework, pick a CSS framework. A while later, you might have an initial project up on GitHub and only then can other team members start contributing. Or how about doing something as simple as Sign in with Facebook authentication? You can spend hours on it if you are not familiar with how OAuth 2.0 works.
 
-The aim and usage of this project goes beyond hackathon purposes only, Symfony Hackathon starter will definitely save any developer hours or even days of development time and can serve as a learning guide for web developers in general.
+The aim and usage of this project goes beyond hackathon purposes only, Golang Gin Hackathon starter will definitely save any developer hours or even days of development time and can serve as a learning guide for web developers in general.
 
-[Symfony](https://symfony.com) is an open-source PHP framework with an elegant structure and a reputation for being a suitable framework to kick-start any project irrespective of its size. As a set of reusable components, its flexibility, architecture, and high performance make it a top choice for building a highly complex enterprise application.
+[Golang](https://go.dev/) is an open-source programming language supported by Google. Software developers use Go in an array of operating systems and frameworks to develop web applications, cloud and networking services, and other types of software.
 
-Symfony Hackathon Starter is a boilerplate application developed with Symfony 7 to keep you ahead in hackathons.
+Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
+
+Gin Golang Hackathon Starter is a boilerplate application developed to keep you ahead in hackathons.
 
 <h4 align="center">Modern Theme</h4>  
   
@@ -95,13 +97,13 @@ The easiest way to get started is to clone the repository:
 
 ```bash
 # Get the project
-git clone https://github.com/yemiwebby/symfony-hackathon-starter.git
+git clone https://github.com/yemiwebby/golang-gin-hackathon-starter.git
 ```
 
 #### Change directory
 
 ```bash
-cd symfony-hackathon-starter
+cd golang-gin-hackathon-starter
 ```
 
 ### Copy .env.dist to .env
