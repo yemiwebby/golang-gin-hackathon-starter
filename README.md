@@ -1,6 +1,6 @@
-![banner-symfony](https://user-images.githubusercontent.com/19610753/47301207-4af51380-d616-11e8-866f-c510f0d6ddf7.jpeg)
+![banner-symfony](./screenshots/homepage.png)
 
-## Golang Gin Hackathon Starter
+## Golang Gin Hackathon Starter (IN PROGRESS)
 
 <!-- **Live Demo**: [https://symfony-hackathon-starter.herokuapp.com/](https://symfony-hackathon-starter.herokuapp.com/) -->
 
@@ -106,50 +106,19 @@ git clone https://github.com/yemiwebby/golang-gin-hackathon-starter.git
 cd golang-gin-hackathon-starter
 ```
 
-### Copy .env.dist to .env
-
-```
-cp .env.dist .env
-```
-
-#### Configure and add database credentials (in .env file)
-
-Open `.env` file and locate the database URL, then add your database credentials as shown here:
-
-```
-DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
-```
-
-- Change db_user to **YOUR_DATABASE_USERNAME**
-- Change db_password to **YOUR_DATABASE_PASSWORD**
-- db_name to **YOUR_DATABASE_NAME**
-- The database host by default is 127.0.0.1 and with a database port of 3306. You can leave this values as it is.
-
-#### Install Composer dependencies
-
-```
-$ composer install
-```
-
-#### Create Database
+#### Install dependencies
 
 ```bash
-$ php bin/console doctrine:database:create
+go mod tidy
 ```
 
-#### Update Schema
+#### Run the project
 
 ```bash
- $ php bin/console doctrine:schema:update --force
+go run main.go
 ```
 
-#### Run the application with
-
-```bash
-php bin/console server:run
-```
-
-![home-hac](https://user-images.githubusercontent.com/19610753/47153650-1b719e80-d2d8-11e8-9228-c7f785050039.png)
+![Homepage](./screenshots/homepage.png)
 
 This starter pack includes the following APIs. You will need to obtain appropriate credentials like Client ID, Client secret, API key, or Username & Password by going through each provider and generate new credentials.
 
