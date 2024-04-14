@@ -1,0 +1,188 @@
+{{ template "header.html" .}}
+
+<main role="main" style="margin-top: 30px">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 title_header">
+        <h3>Profile Information</h3>
+
+        <!-- TODO: Use flash to display messages here
+        {{ if .message }}
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Success!</strong> {{ .message }}
+        </div>
+
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Success!</strong> {{ .message }}
+        </div>
+        {{ end }}
+        -->
+      </div>
+
+      <div class="col-md-12">
+        <form action="user/profile" method="POST">
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label font-weight-bold text-right" for="email"
+              >Email</label
+            >
+            <div class="col-md-7">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label font-weight-bold text-right" for="first_name"
+              >First Name</label
+            >
+            <div class="col-md-7">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Olususi"
+                name="first_name"
+                id="first_name"
+                autocomplete="first_name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label font-weight-bold text-right" for="last_name"
+              >Last Name</label
+            >
+            <div class="col-md-7">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Oluyemi"
+                name="last_name"
+                id="last_name"
+                autocomplete="last_name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label font-weight-bold text-right" for="location"
+              >Location</label
+            >
+            <div class="col-md-7">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Lagos, Nigeria."
+                name="location"
+                id="location"
+                autocomplete=""
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label font-weight-bold text-right" for="website"
+              >Website</label
+            >
+            <div class="col-md-7">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="https://yemiwebby.com.ng"
+                name="website"
+                id="website"
+                autocomplete="url"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="offset-sm-3 col-md-7 pl-2">
+              <button class="btn btn btn-primary" type="submit">
+                <i class="fas fa-pencil-alt fa-sm"></i>Update Profile
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 title_header">
+        <h3>Change Password</h3>
+      </div>
+
+      <div class="col-md-12">
+        <form action="user/updatePassword" method="POST">
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label font-weight-bold text-right" for="password"
+              >New Password</label
+            >
+            <div class="col-md-7">
+              <input
+                class="form-control"
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="new-password"
+                aria-autocomplete="list"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label font-weight-bold text-right" for="confirmPassword"
+              >Confirm Password</label
+            >
+            <div class="col-md-7">
+              <input
+                class="form-control"
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                autocomplete="new-password"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="offset-sm-3 col-md-7 pl-2">
+              <button class="btn btn-primary" type="submit">
+                <i class="fa fa-lock fa-sm"></i>&nbsp;&nbsp;Change Password
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 title_header">
+        <h3>Delete Account</h3>
+      </div>
+
+      <div class="col-md-12">
+        <form action="/user/deleteAccount" method="POST">
+          <div class="form-group">
+            <p class="offset-sm-3 col-md-7 pl-2">
+              You can delete your account, but keep in mind this action is irreversible.
+            </p>
+            <div class="offset-sm-3 col-md-7 pl-2">
+              <button class="btn btn-danger" type="submit">
+                <i class="fa fa-trash fa-sm"></i>&nbsp;&nbsp;Delete my account
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+{{ template "footer.html" .}}
