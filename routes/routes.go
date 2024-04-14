@@ -32,5 +32,8 @@ func InitializeRoutes(router *gin.Engine) {
 		userRoutes.POST("/profile", handlers.UpdateProfileHandler)
 	}
 
+	// Contact route
+	router.GET("/contact", handlers.ShowContactHandler)
+	router.POST("/contact", handlers.ContactHandler)
 	
 }
